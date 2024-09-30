@@ -30,15 +30,15 @@ export default function WhyCareHospitals() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-9">
         {cards.map((card, index) => (
           <Card key={index} className="overflow-hidden rounded-none shadow-md">
-            <Image src={card.image} alt={card.title} className="object-cover w-full h-52" />
-            <CardHeader>
-              <CardTitle>{card.title}</CardTitle>
+            <Image src={card.image} alt={card.title} className="object-cover w-full h-60" />
+            <CardHeader >
+              <CardTitle className="text-lg font-light">{card.title}</CardTitle>
             </CardHeader>
-            <CardContent>
-              <CardDescription>{card.description}</CardDescription>
+            <CardContent >
+              <CardDescription className="text-base text-black ">{card.description}</CardDescription>
             </CardContent>
             <CardFooter>
-              <Button variant="link" className="text-blue-500 hover:text-blue-700 p-0">
+              <Button variant="link" className="text-[#00b6bd] text-base">
                 Know More &gt;
               </Button>
             </CardFooter>
