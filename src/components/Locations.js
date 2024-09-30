@@ -5,11 +5,12 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Link from 'next/link'
 import Image from 'next/image'
 import Malakpet from '../../public/assets/muusheerabad.jpg';
+import Banjarahills from '../../public/assets/banjarahills.jpg';
 
 const locations = {
   Hyderabad: [
     { name: 'CARE Hospitals, Malakpet', image: Malakpet, address: '16-6-104 to 109, Old Kamal Theater Complex Chaderghat Road, Opp Niagara Hotel, Chaderghat, Hyderabad, Telangana - 500024' },
-    { name: 'CARE Hospitals, Banjara Hills', image: '/placeholder.svg?height=200&width=300', address: 'Road No 1, Banjara Hills, Hyderabad, Telangana 500034' },
+    { name: 'CARE Hospitals, Banjara Hills', image: Banjarahills, address: 'Road No 1, Banjara Hills, Hyderabad, Telangana 500034' },
     { name: 'CARE Hospitals Outpatient Centre, Banjara Hills', image: '/placeholder.svg?height=200&width=300', address: 'Road No 10, Banjara Hills, Hyderabad, Telangana 500034' },
     { name: 'CARE Hospitals, Nampally', image: '/placeholder.svg?height=200&width=300', address: 'Exhibition Grounds Road, Nampally, Hyderabad, Telangana 500001' },
     { name: 'CARE Hospitals, Hi-tech City', image: '/placeholder.svg?height=200&width=300', address: 'Old Mumbai Highway, Jayabheri Pine Valley, HITEC City, Hyderabad, Telangana 500032' },
@@ -50,14 +51,14 @@ export default function Locations() {
   }
 
   return (
-    <div className="container mx-auto py-16">
-      <h1 className="text-4xl font-bold text-center mb-8">Our Locations</h1>
-      <p className="text-center mb-12 max-w-6xl mx-auto">
+    <div className="container mx-auto pt-14">
+      <h2 className="text-4xl font-light text-center mb-8">Our Locations</h2>
+      <p className="text-center mb-16 max-w-8xl mx-auto text-lg">
         CARE Hospitals, a part of the Quality Care India Limited, brings international quality healthcare to serve patients across the world. With 17 healthcare facilities serving 7 cities across 6 states in India we are counted among the top 5 pan-Indian hospital chains.
       </p>
 
       <Tabs value={activeCity} onValueChange={(city) => { setActiveCity(city); setActiveSet(0); }} className="w-full">
-        <TabsList className="w-full flex justify-between border-b border-gray-200 mb-8">
+        <TabsList className="w-full flex justify-between border-b border-red mb-8">
           {Object.keys(locations).map((city) => (
             <TabsTrigger key={city} value={city} className="px-6 py-3 text-gray-600 hover:text-teal-500 border-b-2 border-transparent data-[state=active]:border-teal-500 data-[state=active]:text-teal-500 transition-all duration-200 ease-in-out">
               {city}

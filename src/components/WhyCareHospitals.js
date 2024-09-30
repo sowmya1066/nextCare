@@ -37,8 +37,8 @@ export default function WhyCareHospitals() {
             <CardContent>
               <CardDescription className="text-base text-black">{card.description}</CardDescription>
             </CardContent>
-            <CardFooter className="py-2 px-2 pb-4">
-              <Button variant="link" className="text-[#00b6bd] text-base">
+            <CardFooter className="py-2 px-2 pb-3">
+              <Button variant="link" className="text-[#00b6bd] items-centre ml-1 text-base transition-transform duration-300 hover:translate-x-1">
                 Know More &gt;
               </Button>
             </CardFooter>

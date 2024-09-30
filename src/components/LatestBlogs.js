@@ -3,19 +3,21 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import ChronicObs from '../../public/assets/chronic_obstructive_pulmonary_disease.jpg';
+import OverdoseVitamins from '../../public/assets/OverdoseVitamins.jpg';
 
 const blogPosts = [
   {
     id: 1,
     title: 'Chronic Obstructive Pulmonary Disease: Causes, Symptoms, Diagnosis, Treatment and Prevention',
-    image: '/placeholder.svg?height=400&width=800',
+    image: ChronicObs,
     excerpt: 'Chronic Obstructive Pulmonary Disease (or COPD) is a lung condition that affects the breathing of a...',
     link: '#'
   },
   {
     id: 2,
     title: 'Can You Overdose on Vitamins: Everything You Need To Know',
-    image: '/placeholder.svg?height=200&width=300',
+    image: OverdoseVitamins,
     excerpt: 'Millions of individuals throughout the world take vitamins on a daily basis. Though most supplement bottles in...',
     link: '#'
   },
@@ -105,9 +107,9 @@ const LatestBlogs = () => {
                 <Image
                   src={blogPosts[index].image}
                   alt={blogPosts[index].title}
-                  width={300}
-                  height={200}
-                  className="object-cover w-full h-full"
+                  width={169}
+                  height={150}
+                  className="object-cover"
                 />
               </div>
               <div className="w-2/3 p-4">
