@@ -46,23 +46,23 @@ export default function CentreOfExcellence() {
                 <Link
                   key={index}
                   href={specialty.link}
-                  className="flex items-center text-navy-700 hover:text-navy-500 transition-colors duration-200 mb-4"
+                  className="flex items-center mb-4"
                 >
                   <FontAwesomeIcon 
                     icon={faArrowRight} 
                     className="w-4 h-4 mr-2 text-teal-500 flex-shrink-0"
                     aria-hidden="true"
                   />
-                  <span className="text-[16px] font-light text-black ">{specialty.name}</span>
+                  <span className="text-base font-light text-black">{specialty.name}</span>
                 </Link>
               ))}
             </div>
-            <div className="mt-8 text-center">
+            <div className="mt-8 text-center ">
               <Link
                 href="#"
-                className="text-teal-500 hover:text-teal-600 font-semibold transition-colors duration-200 inline-flex items-center justify-center"
+                className="text-teal-500  inline-flex items-center justify-center"
               >
-                <span>View All</span>
+                <span className='text-lg'>View All</span>
                 <FontAwesomeIcon 
                   icon={faArrowRight} 
                   className="ml-2 w-4 h-4"
