@@ -52,7 +52,7 @@ export default function Locations() {
   return (
     <div className="container mx-auto py-16">
       <h1 className="text-4xl font-bold text-center mb-8">Our Locations</h1>
-      <p className="text-center mb-12 max-w-3xl mx-auto">
+      <p className="text-center mb-12 max-w-6xl mx-auto">
         CARE Hospitals, a part of the Quality Care India Limited, brings international quality healthcare to serve patients across the world. With 17 healthcare facilities serving 7 cities across 6 states in India we are counted among the top 5 pan-Indian hospital chains.
       </p>
 

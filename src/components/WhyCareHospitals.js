@@ -34,10 +34,10 @@ export default function WhyCareHospitals() {
             <CardHeader >
               <CardTitle className="text-lg font-light">{card.title}</CardTitle>
             </CardHeader>
-            <CardContent >
-              <CardDescription className="text-base text-black ">{card.description}</CardDescription>
+            <CardContent>
+              <CardDescription className="text-base text-black">{card.description}</CardDescription>
             </CardContent>
-            <CardFooter>
+            <CardFooter className="py-2 px-2 pb-4">
               <Button variant="link" className="text-[#00b6bd] text-base">
                 Know More &gt;
               </Button>
