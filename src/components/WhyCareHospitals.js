@@ -14,7 +14,7 @@ export default function WhyCareHospitals() {
     },
     {
       title: "Treatment Options",
-      description: "We provide services in over 30+ medical specialities with state-of-the-art infrastructure and highest standards of care.",
+      description: "We provide services in over 30+ medical specialities with state-of-the-art infrastructure.",
       image: TreatmentOptions,
     },
     {
