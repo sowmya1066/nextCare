@@ -30,7 +30,7 @@ export default function CentreOfExcellence() {
   return (
     <div className="pt-12">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl text-center text-[#0E2D58] pb-7">Centre of Excellence</h2>
+        <h2 className="text-4xl text-center text-[#0E2D58] pb-8">Centre of Excellence</h2>
         <div className="bg-white flex flex-col md:flex-row items-start">
           <div className="md:w-5/12 mb-8 md:mb-0">
             <Image
