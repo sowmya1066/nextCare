@@ -106,7 +106,7 @@ function LocationCard({ hospital }) {
         <Image src={hospital.image} alt={hospital.name} width={300} height={200} className="w-full h-48 object-cover" />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
           <h3 className="text-white text-xl font-semibold mb-2">{hospital.name}</h3>
-          <hr className="border-t border-white opacity-50 mb-2" />
+          <hr className="border-t border-red opacity-50 mb-2" />
           <p className="text-white text-sm mb-4">{hospital.address}</p>
           <Link href="#">
             <Button variant="secondary" size="sm">
