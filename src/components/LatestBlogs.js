@@ -103,8 +103,8 @@ const LatestBlogs = () => {
                 <Image
                   src={blogPosts[index].image}
                   alt={blogPosts[index].title}
-                  width={169}
-                  height={150}
+                  width={199}
+                  height={170}
                   className="object-cover"
                 />
               </div>
