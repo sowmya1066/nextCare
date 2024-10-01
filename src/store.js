@@ -1,8 +1,9 @@
 import create from 'zustand';
 
-export const useStore = create((set) => ({
-  theme: 'light',
-  toggleTheme: () => set((state) => ({
-    theme: state.theme === 'light' ? 'dark' : 'light',
-  })),
+const useStore = create((set) => ({
+  isAuthenticated: false,
+  login: () => set({ isAuthenticated: true }),
+  logout: () => set({ isAuthenticated: false }),
 }));
+
+export default useStore;
