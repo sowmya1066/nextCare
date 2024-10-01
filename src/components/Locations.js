@@ -6,6 +6,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Malakpet from '../../public/assets/muusheerabad.jpg';
 import Banjarahills from '../../public/assets/banjarahills.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const locations = {
   Hyderabad: [
@@ -95,6 +97,13 @@ export default function Locations() {
           </TabsContent>
         ))}
       </Tabs>
+
+      <div className="mt-16 text-center">
+        <Link href="#" className="text-teal-500 text-lg  items-center justify-center">
+          View All
+          <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-4 w-4" />
+        </Link>
+      </div>
     </div>
   )
 }

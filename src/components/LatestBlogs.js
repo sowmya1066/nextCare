@@ -47,12 +47,8 @@ const blogPosts = [
 const LatestBlogs = () => {
   return (
     <div className="container mx-auto px-4 py-12 bg-gray-100">
-      <div className="flex justify-between items-center mb-8">
-        <h2 className="text-3xl font-bold text-navy-900">Latest Blogs</h2>
-        <Link href="#" className="text-teal-500 hover:text-teal-600 transition-colors duration-200 flex items-center">
-          View All
-          <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-4 w-4" />
-        </Link>
+      <div>
+        <h2 className="text-4xl font-light text-center mb-8 mt-4">Latest Blogs</h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
